@@ -1539,6 +1539,55 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services .services-table-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.services .services-table {
+  --bs-table-color: var(--default-color);
+  --bs-table-bg: var(--surface-color);
+  --bs-table-border-color: color-mix(in srgb, var(--accent-color), transparent 65%);
+  --bs-table-striped-bg: color-mix(in srgb, var(--accent-color), transparent 88%);
+  --bs-table-striped-color: var(--default-color);
+  --bs-table-hover-bg: color-mix(in srgb, var(--accent-color), transparent 78%);
+  --bs-table-hover-color: var(--heading-color);
+  margin-bottom: 0;
+}
+
+.services .services-table thead th {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+}
+
+.services .services-table thead {
+  --bs-table-bg: var(--accent-color);
+  --bs-table-color: var(--contrast-color);
+  --bs-table-border-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
+}
+
+.services .services-table tbody td {
+  padding: 1rem 1.25rem;
+}
+
+.services .services-table tbody td:first-child {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.services .services-table tbody td:last-child {
+  color: var(--accent-color);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.services .services-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
 .services .service-item {
   display: flex;
   background-color: var(--surface-color);
